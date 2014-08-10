@@ -1,3 +1,19 @@
+/*
+	Cylon_V2
+
+	This uses a number of things that I learned from the www.arduino.cc site including
+
+	http://arduino.cc/en/Tutorial/Debounce
+	http://arduino.cc/en/Tutorial/ButtonStateChange
+	http://arduino.cc/en/Tutorial/BlinkWithoutDelay
+
+	Using a Mega 2560 I created a small 7 LED larson scanner triggered by a momentary button
+
+	I have some things that I want to try like making a dedicated LED and Button classes to 
+	handle some of those things, but my C/C++ is realy rusty so I'll have to come back to it a little later
+
+*/
+
 const int buttonPin = 30;  //Using the Mega 2560
 const int ledPin = 13;
 const int ledDelay = 75;
@@ -26,9 +42,6 @@ void setup()
 	{
 		pinMode(leds[thisPin], OUTPUT);
 	}
-	
-	// Serial.begin(9600);
-	// Serial.println(len);
 }
 
 void loop()
